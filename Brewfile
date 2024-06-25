@@ -24,6 +24,7 @@ brew "python@3.11"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Open source build of Lens Kubernetes IDE
+brew "zsh"
 cask "openlens"
 vscode "akamud.vscode-theme-onedark"
 vscode "alphabotsec.vscode-eclipse-keybindings"
