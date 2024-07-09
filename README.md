@@ -43,3 +43,27 @@ brew bundle --file ~/.dotfiles/Brewfile
 # ...or move to the directory first.
 cd ~/.dotfiles && brew bundle
 ```
+
+## Linux (WSL)
+
+1. Navigate to ~
+
+2. Create symlink for .gitconfig and .zshrc files
+`ln -s /path/to/dotfiles-repo/.zshrc ~/.zshrc`
+`ln -s /path/to/dotfiles-repo/.gitconfig ~/.gitconfig`
+
+3. Verify symlink
+`ls -l ~/.file`
+
+4. Source zshrc
+`source ~/.zshrc`
+
+5. Authenticate with github CLI
+`ls -l ~/.zshrc`
+
+Alternatively, we can run the script `setup-dotfiles.sh`
+
+```
+chmod +x setup_dotfiles.sh
+./setup_dotfiles.sh /path/to/dotfiles-repo
+```
