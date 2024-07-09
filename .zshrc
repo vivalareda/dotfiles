@@ -7,9 +7,13 @@ eval "$(oh-my-posh init zsh --config ~/github/oh-my-posh/themes/capr4n.omp.json)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias g='git'
+alias gc='git commit -m'
+alias ga='git add'
+alias gac='git add . && git commit -m'
 
 # Custom function to run git pull and open VS Code
-codepull() {
+cp() {
   # If no argument is given, use the current directory
   if [ -z "$1" ]; then
     dir="."

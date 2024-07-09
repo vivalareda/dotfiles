@@ -10,3 +10,13 @@
 	editor = code --wait
 [credential]
 	helper = !/usr/bin/gh auth git-credential
+[alias]
+    undo = reset --soft HEAD^
+	ac = !git add . && git commit -m
+	c = commit -m
+    co = checkout
+	cob = checkout -b
+	rl =
+
+	# list aliases
+    la = "!git config -l | grep alias | cut -c 7-"
