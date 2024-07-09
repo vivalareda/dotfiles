@@ -8,3 +8,5 @@
 	required = true
 [core]
 	editor = code --wait
+[credential]
+	helper = !/usr/bin/gh auth git-credential
