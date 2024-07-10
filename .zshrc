@@ -7,6 +7,11 @@ eval "$(oh-my-posh init zsh --config ~/github/oh-my-posh/themes/capr4n.omp.json)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Plugins
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+# Custom aliases
 alias g='git'
 alias gc='git commit -m'
 alias ga='git add'
@@ -28,3 +33,6 @@ cp() {
   git pull
   code .
 }
+
+# Ensure that zsh-syntax-highlighting is loaded last
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
