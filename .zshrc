@@ -37,3 +37,6 @@ cp() {
 
 # Ensure that zsh-syntax-highlighting is loaded last
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Set up fzf key bindings and fuzzy completion
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
