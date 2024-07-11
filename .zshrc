@@ -5,6 +5,7 @@ eval "$(oh-my-posh init zsh --config ~/github/oh-my-posh/themes/capr4n.omp.json)
 # End of lines added by compinstall
 
 export NVM_DIR="$HOME/.nvm"
+export VIMRC_ENV=wsl
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
