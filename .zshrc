@@ -18,7 +18,7 @@ alias gc='git commit -m'
 alias ga='git add'
 alias gac='git add . && git commit -m'
 alias gp='git push'
-
+alias p='python3'
 # Custom function to run git pull and open VS Code
 cp() {
   # If no argument is given, use the current directory
