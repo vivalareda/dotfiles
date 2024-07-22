@@ -1,0 +1,31 @@
+{
+  "vim.vimrc.enable": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.hlsearch": true,
+  "vim.surround": true,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["leader", "i"],
+      "commands": ["extension.toggleBool"]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "after": ["<C-r>"]
+    }
+  ],
+
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["M"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    }
+  ]
+}
+
