@@ -53,9 +53,9 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
   {
-  "key": "o",
-  "command": "list.expand",
-  "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    "key": "o",
+    "command": "list.expand",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
     "key": "ctrl+k",
@@ -66,5 +66,15 @@
     "key": "ctrl+up",
     "command": "-selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "expand_region",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "undo_expand_region",
+    "when": "editorTextFocus && editorHasSelection"
   }
 ]
