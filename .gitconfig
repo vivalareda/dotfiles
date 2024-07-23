@@ -16,7 +16,6 @@
 	c = commit -m
     co = checkout
 	cob = checkout -b
-	rl =
 
 	# list aliases
     la = "!git config -l | grep alias | cut -c 7-"

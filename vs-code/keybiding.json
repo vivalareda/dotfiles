@@ -53,6 +53,11 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
   {
+  "key": "o",
+  "command": "list.expand",
+  "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
     "key": "ctrl+k",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
